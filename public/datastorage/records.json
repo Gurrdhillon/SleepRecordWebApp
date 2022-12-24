@@ -1,0 +1,30 @@
+[
+        {
+            "id":1,
+            "Date":"12/12/22",
+            "SleepIn":"9:30PM",
+            "SleepOut":"5:00AM",
+            "Hours":7.5
+        },
+        {
+            "id":2,
+            "Date":"12/13/22",
+            "SleepIn":"9:30PM",
+            "SleepOut":"5:00AM",
+            "Hours":7.5
+        },
+        {
+            "id":3,
+            "Date":"12/14/22",
+            "SleepIn":"9:30PM",
+            "SleepOut":"5:00AM",
+            "Hours":7.5
+        },
+        {
+            "id":4,
+            "Date":"12/15/22",
+            "SleepIn":"9:30PM",
+            "SleepOut":"5:00AM",
+            "Hours":7.5
+        }
+]
