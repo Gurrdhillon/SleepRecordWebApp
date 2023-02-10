@@ -10,7 +10,7 @@ export default function nav() {
   return (
     <nav>
         <ul className='nav-Links'>
-            <Link style={navStyle} to='/'>
+            <Link style={navStyle} to='/about'>
             <li>Home</li>
             </Link>
             <Link style={navStyle} to='/about'>

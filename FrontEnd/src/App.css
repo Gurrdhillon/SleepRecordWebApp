@@ -18,6 +18,22 @@ nav{
   justify-content: space-around;
   align-items: center;
   list-style: none;
-
-
 }
+
+.data-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 3em;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+}
+td {
+  border: 1px solid gray;
+  width: 30em;
+}
+
+

@@ -5,8 +5,8 @@ import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import '/Users/gursevak/Projects/SleepRecordWebApp/src/customcss/forms.css';
-import Image from '/Users/gursevak/Projects/SleepRecordWebApp/src/images/images.jpeg';
+import '/Users/gursevak/Projects/SleepRecordWebApp/FrontEnd/src/customcss/forms.css';
+import Image from '/Users/gursevak/Projects/SleepRecordWebApp/FrontEnd/src/images/images.jpeg';
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
@@ -61,7 +61,8 @@ export default function SleepForm() {
   } else {
     return (
     <div style={divStyle}>
- 
+      {/* <div style={{  justifyContent: "center", alignItems: "center", height: "100vh" , width: '100vw'}}> */}
+      <div style = {{padding: "50px"}}>
     <Form onSubmit={handleSubmit} >
       <Form.Group as={Row} className="mb-1" controlId="formBasicDate">
         <Form.Label column sm={3} >Date</Form.Label> 
@@ -70,7 +71,7 @@ export default function SleepForm() {
         </Col>
       </Form.Group>
 
-      <Form.Group as={Row} className="mb-1" controlId="formBasicTime">
+      {/* <Form.Group as={Row} className="mb-1" controlId="formBasicTime">
         <Form.Label column sm={3} >Sleep In</Form.Label>
         <Col sm={5}>
         <Form.Control type="time" placeholder="Sleep In" />
@@ -82,10 +83,10 @@ export default function SleepForm() {
         <Col sm={5}>
         <Form.Control type="time" placeholder="Sleep Out" />
         </Col>
-      </Form.Group>
+      </Form.Group> */}
 
       <Form.Group as={Row} className="mb-3" controlId="formBasicHour">
-        <Form.Label column sm={3}  >Total Sleep Time</Form.Label>
+        <Form.Label column sm={3}  >Hours</Form.Label>
         <Col sm={5}>
         <Form.Control type="hour" placeholder="Sleeping Hours" />
         </Col>
@@ -95,6 +96,7 @@ export default function SleepForm() {
         Submit
       </Button>
     </Form>
+    </div>
     </div>
       );
   }

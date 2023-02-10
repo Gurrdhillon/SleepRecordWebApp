@@ -1,0 +1,37 @@
+[
+        {
+            "id":1,
+            "date":"Date",
+            "sleepIn":"sleepIn",
+            "sleepOut":"sleepOut",
+            "hours":"hours"
+        },
+        {
+            "id":2,
+            "date":"12/12/22",
+            "sleepIn":"9:30PM",
+            "sleepOut":"5:00AM",
+            "hours":9.5
+        },
+        {
+            "id":3,
+            "date":"12/13/22",
+            "sleepIn":"9:30PM",
+            "sleepOut":"5:00AM",
+            "hours":5.5
+        },
+        {
+            "id":4,
+            "date":"12/14/22",
+            "sleepIn":"9:30PM",
+            "sleepOut":"5:00AM",
+            "hours":6.5
+        },
+        {
+            "id":5,
+            "date":"12/15/22",
+            "sleepIn":"9:30PM",
+            "sleepOut":"5:00AM",
+            "hours":8.1
+        }
+]
