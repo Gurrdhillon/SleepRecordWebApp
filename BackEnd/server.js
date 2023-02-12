@@ -2,17 +2,19 @@ const express = require('express');
 const cors = require('cors')        //cors required to access this internet address and socket, from other page
 const sql = require('mssql');
 const app = express();
+// const dotenv = require('dotenv').config();
 app.use(cors())
+const config = require('./config');
+const dbConfig = config.db;
 
-const config = {
-    user: 'gursevaks',
-    password: 'Waheguru@1',
-    server: 'gursevak1database.database.windows.net',
-    database: 'g1'
-};
 
-sql.connect(config, function (err) {
+
+sql.connect(dbConfig, function (err) {
+
     if (err) console.log('Error',err);
+
+    console.log("user: ",config.user);
+
     console.log("Connected");
 });
 
