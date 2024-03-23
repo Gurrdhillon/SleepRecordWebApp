@@ -1,9 +1,12 @@
 const express = require('express');
-const cors = require('cors')        //cors required to access this internet address and socket, from other page
+const cors = require('cors');     //cors required to access this internet address and socket, from other page
+const bodyParser = require('body-parser');
 const sql = require('mssql');
 const app = express();
 // const dotenv = require('dotenv').config();
 app.use(cors())
+app.use(bodyParser.json());
+
 const config = require('./config');
 const dbConfig = config.db;
 
@@ -13,7 +16,7 @@ sql.connect(dbConfig, function (err) {
 
     if (err) console.log('Error',err);
 
-    console.log("user: ",config.user);
+    console.log("user: ",dbConfig.user);
 
     console.log("Connected");
 });
@@ -30,7 +33,9 @@ app.get('/api/get', (req, res) => {
 
 app.post('/api/insert', (req, res) => {
     const request = new sql.Request();
-    request.query(`INSERT INTO SleepRecord (date, hours) VALUES ('${req.body.date}', '${req.body.hours}')`, (err, data) => {
+    console.log()
+    request.query(`INSERT INTO SleepRecord (date, hours) VALUES ('${req.body.date}', 
+    '${req.body.hours}')`, (err, data) => {
         if (err) console.log(err);
         res.send(data);
     });
